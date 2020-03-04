@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/app_images_recycler"
+        tools:listitem="@layout/model_item">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/progressBarDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerInParent="true"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_app_name"
+        android:layout_below="@id/app_images_recycler"
+        tools:text="App name"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_app_ranking"
+        android:layout_below="@id/detail_app_name"
+        tools:text="App ranking"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd">
+
+    </TextView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_app_long_description"
+        android:layout_below="@+id/detail_app_ranking"
+        tools:text="App long description"
+        android:layout_marginTop="10dp"
+        android:textAlignment="viewEnd">
+
+    </TextView>
+
+
+
+
+
+
+</RelativeLayout>
